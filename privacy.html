@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Celestial Strings</title>
-<meta name="description" content="Celestial Strings collects no personal data. The app makes no network requests and works fully offline.">
+<meta name="description" content="Celestial Strings collects no personal data. The app uses Firebase Analytics and Crashlytics for basic, automatic usage and crash data only.">
 <link rel="canonical" href="https://rust42.github.io/celestial-strings-site/privacy.html">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#121016">
@@ -37,16 +37,19 @@
   <h1>Privacy Policy</h1>
   <p class="updated">Last updated September 15, 2026.</p>
 
-  <p><strong>Celestial Strings does not collect, store, or transmit any personal data. Every feature runs entirely on your device.</strong></p>
+  <p><strong>Celestial Strings does not collect or store any information that identifies you personally, and doesn't ask you to create an account.</strong> Since September 15, 2026, the app uses Firebase Analytics and Firebase Crashlytics (both from Google) for basic, automatic usage and crash data — see "Analytics and crash reporting" below for exactly what that means. Before that date the app made no network requests of any kind; that's no longer accurate, and this policy reflects what's actually true now.</p>
 
   <h2>Microphone access</h2>
-  <p>Oracle, the tuner, uses your device's microphone to detect the pitch of your instrument in real time. That audio is processed on-device only — it is never recorded, saved, or sent anywhere, and is discarded immediately after each analysis.</p>
+  <p>Oracle, the tuner, uses your device's microphone to detect the pitch of your instrument in real time. That audio is processed on-device only — it is never recorded, saved, or sent anywhere (including to Firebase), and is discarded immediately after each analysis.</p>
 
-  <h2>No accounts, no analytics, no ads</h2>
-  <p>Celestial Strings has no user accounts, no sign-in, and does not track you or your usage in any way. It shows no advertising.</p>
+  <h2>Analytics and crash reporting</h2>
+  <p>The app uses Firebase Analytics and Firebase Crashlytics, both provided by Google, to understand basic usage patterns and diagnose crashes. This is automatic collection only — the app does not log custom events for specific actions (which room you opened, which chord you played, and so on).</p>
+  <p><strong>Firebase Analytics</strong>: automatically-collected usage data such as app opens, session length, screen views, general device/OS information, and approximate location derived from IP address (city- or region-level, not precise). This does not include an advertising identifier (IDFA) — the app doesn't link Apple's advertising-tracking frameworks at all, so no cross-app or cross-site tracking happens, and no App Tracking Transparency prompt is needed for this.</p>
+  <p><strong>Firebase Crashlytics</strong>: automatic crash and non-fatal-error reports — a stack trace, device/OS information, and app state at the moment of a crash, so problems can actually get fixed.</p>
+  <p>This data is processed by Google under Firebase's own terms; see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase's own documentation</a> for how Google itself handles it. Celestial Strings doesn't sell this data or share it with anyone beyond Google/Firebase's standard processing.</p>
 
-  <h2>No network access</h2>
-  <p>Celestial Strings makes no network requests of any kind. It works fully offline.</p>
+  <h2>No accounts, no ads</h2>
+  <p>Celestial Strings has no user accounts and no sign-in. It shows no advertising.</p>
 
   <h2>About this website</h2>
   <p>This policy covers the Celestial Strings <em>app</em>. This site (the page you're reading now) is a separate, static site and may use an optional analytics cookie to understand which pages people visit — never used to identify you personally, and never shared with or connected to the app itself. You'll see a banner asking before any such cookie is set, and can decline it entirely.</p>
