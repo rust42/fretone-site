@@ -4,10 +4,10 @@
 // Control by skipping the prompt (and analytics) entirely, same as
 // declining.
 //
-// GA_MEASUREMENT_ID is a placeholder. Analytics stays inert (the banner
-// still asks, but "Accept" is a no-op) until a real ID from
-// https://analytics.google.com replaces it.
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+// Real GA4 Web stream Measurement ID (analytics.google.com → Admin →
+// Data Streams → the Web stream for this site — not the iOS app's
+// Firebase stream, which has no G-... ID at all).
+const GA_MEASUREMENT_ID = "G-XB4E3JP74V";
 
 const CONSENT_KEY = "cs_analytics_consent";
 
