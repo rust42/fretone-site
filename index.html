@@ -1,29 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Celestial Strings</title>
-<style>
-  body {
-    margin: 0;
-    background: #1f120d;
-    color: #e8dcc8;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celestial Strings — Guitar Tuner, Chords &amp; Fretboard</title>
+<meta name="description" content="A guitar practice companion for iPhone, iPad, and Mac: real-time tuner, metronome, hand-verified chord library, fretboard explorer, fingerstyle trainer, and a scales/CAGED/circle-of-fifths reference. No accounts, no ads, no streaks.">
+<link rel="canonical" href="https://rust42.github.io/celestial-strings-site/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#121016">
+
+<!-- Google Search Console verification — replace with the real token from
+     search.google.com/search-console once the property is added. -->
+<!-- <meta name="google-site-verification" content="REPLACE_ME"> -->
+
+<!-- Open Graph / Twitter Card -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Celestial Strings">
+<meta property="og:title" content="Celestial Strings — Guitar Tuner, Chords & Fretboard">
+<meta property="og:description" content="Six real practice tools for guitar, in one focused app: tuner, metronome, chord library, fretboard explorer, fingerstyle trainer, and a scales/CAGED reference. No accounts, no ads, no streaks.">
+<meta property="og:image" content="https://rust42.github.io/celestial-strings-site/assets/og-image.png">
+<meta property="og:url" content="https://rust42.github.io/celestial-strings-site/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Celestial Strings — Guitar Tuner, Chords & Fretboard">
+<meta name="twitter:description" content="Six real practice tools for guitar, in one focused app. No accounts, no ads, no streaks.">
+<meta name="twitter:image" content="https://rust42.github.io/celestial-strings-site/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Manrope:wght@400;600;700&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Celestial Strings",
+  "applicationCategory": "MusicApplication",
+  "operatingSystem": "iOS, iPadOS, macOS",
+  "description": "A guitar practice companion — tuner, metronome, chord library, fretboard explorer, fingerstyle trainer, and a scales/CAGED/circle-of-fifths reference. No accounts, no ads, no streaks.",
+  "url": "https://rust42.github.io/celestial-strings-site/",
+  "image": "https://rust42.github.io/celestial-strings-site/assets/icon-512.png",
+  "installUrl": "https://apps.apple.com/us/app/celestial-strings/id6804508418",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
   }
-  h1 { color: #e9c349; letter-spacing: 0.04em; }
-  a { color: #e9c349; }
-</style>
+}
+</script>
 </head>
 <body>
-  <div>
-    <h1>Celestial Strings</h1>
-    <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="support.html">Support</a> &middot; <a href="copyright.html">Copyright</a></p>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top">
+      <img src="assets/icon-512.png" alt="" width="32" height="32">
+      Celestial Strings
+    </a>
+    <nav class="rooms" aria-label="Rooms">
+      <a href="#rooms">Rooms</a>
+      <a href="#screens">Screens</a>
+      <a href="#why">Why</a>
+      <a href="#get">Get the app</a>
+    </nav>
   </div>
+</header>
+
+<main id="main">
+  <div class="hero wrap" id="top">
+    <img class="icon" src="assets/icon-512.png" alt="Celestial Strings app icon — a crescent moon and guitar headstock" width="112" height="112">
+    <h1>Celestial Strings</h1>
+    <p class="tagline">Six real practice tools for guitar, in one focused app — tuner, chords, and the whole fretboard, without a single streak to keep up.</p>
+    <p class="platforms">Compatible with iPhone, iPad, and Mac.</p>
+
+    <div id="get" class="store-row">
+      <a href="https://apps.apple.com/us/app/celestial-strings/id6804508418" aria-label="Download Celestial Strings on the App Store">
+        <img class="badge" src="assets/badges/download-white.svg" alt="Download on the App Store">
+      </a>
+      <a href="https://apps.apple.com/us/app/celestial-strings/id6804508418" aria-label="Download Celestial Strings on the App Store">
+        <img class="qr" src="assets/qr-code.jpg" alt="QR code linking to the Celestial Strings App Store page" width="92" height="92">
+      </a>
+    </div>
+    <p class="store-note">Free on the App Store, for iPhone, iPad, and Mac.</p>
+  </div>
+
+  <section id="rooms">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Six rooms, no progress bars</span>
+        <h2>Everything you actually reach for mid-practice</h2>
+        <p>Each room is a real, focused tool — not a gamified layer bolted on top of one.</p>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card">
+          <div class="glyph">OR</div>
+          <h3>Oracle — Tuner</h3>
+          <p>Tune your instrument by ear, with real-time pitch feedback.</p>
+        </article>
+        <article class="room-card">
+          <div class="glyph">PU</div>
+          <h3>Pulse — Metronome</h3>
+          <p>Keep time with an adjustable-tempo metronome.</p>
+        </article>
+        <article class="room-card">
+          <div class="glyph">CH</div>
+          <h3>Chords — Chord library</h3>
+          <p>Browse and hear hundreds of chord shapes, organized by key and difficulty, with real hand-verified fingerings.</p>
+        </article>
+        <article class="room-card">
+          <div class="glyph">CX</div>
+          <h3>Codex — Fretboard explorer</h3>
+          <p>An interactive fretboard, plus a drill for switching cleanly between chords.</p>
+        </article>
+        <article class="room-card">
+          <div class="glyph">LO</div>
+          <h3>Loom — Fingerstyle trainer</h3>
+          <p>Build fingerpicking patterns and multi-chord sequences, then play them back.</p>
+        </article>
+        <article class="room-card">
+          <div class="glyph">TR</div>
+          <h3>Trials — Fretboard reference</h3>
+          <p>Explore the fretboard — notes, scales, CAGED shapes, and the circle of fifths.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Real screens, both themes</span>
+        <h2>See it before you get it</h2>
+        <p>Straight from the App Store listing — toggle to see either theme, regardless of your system setting.</p>
+        <div class="theme-toggle" role="group" aria-label="Screenshot theme">
+          <button type="button" data-theme-choice="light">Light</button>
+          <button type="button" data-theme-choice="dark">Dark</button>
+        </div>
+      </div>
+      <div class="shots-grid" id="shots-grid">
+        <figure>
+          <img class="shot-light" src="assets/screenshots/01Oracle-light.png" alt="Oracle tuner screen showing a live pitch reading">
+          <img class="shot-dark" src="assets/screenshots/01Oracle-dark.png" alt="Oracle tuner screen showing a live pitch reading">
+          <figcaption>Oracle — Tuner</figcaption>
+        </figure>
+        <figure>
+          <img class="shot-light" src="assets/screenshots/02Pulse-light.png" alt="Pulse metronome screen with tempo dial">
+          <img class="shot-dark" src="assets/screenshots/02Pulse-dark.png" alt="Pulse metronome screen with tempo dial">
+          <figcaption>Pulse — Metronome</figcaption>
+        </figure>
+        <figure>
+          <img class="shot-light" src="assets/screenshots/05CodexChords-light.png" alt="Chords chord library screen">
+          <img class="shot-dark" src="assets/screenshots/05CodexChords-dark.png" alt="Chords chord library screen">
+          <figcaption>Chords — Chord library</figcaption>
+        </figure>
+        <figure>
+          <img class="shot-light" src="assets/screenshots/04CodexFretboard-light.png" alt="Codex interactive fretboard screen">
+          <img class="shot-dark" src="assets/screenshots/04CodexFretboard-dark.png" alt="Codex interactive fretboard screen">
+          <figcaption>Codex — Fretboard explorer</figcaption>
+        </figure>
+        <figure>
+          <img class="shot-light" src="assets/screenshots/03Loom-light.png" alt="Loom fingerstyle pattern trainer screen">
+          <img class="shot-dark" src="assets/screenshots/03Loom-dark.png" alt="Loom fingerstyle pattern trainer screen">
+          <figcaption>Loom — Fingerstyle trainer</figcaption>
+        </figure>
+        <figure>
+          <img class="shot-light" src="assets/screenshots/07TrialsCAGED-light.png" alt="Trials fretboard reference screen in CAGED mode">
+          <img class="shot-dark" src="assets/screenshots/07TrialsCAGED-dark.png" alt="Trials fretboard reference screen in CAGED mode">
+          <figcaption>Trials — Fretboard reference</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap trust">
+      <div class="wrap" style="padding-block:2.6rem;">
+        <div class="section-head">
+          <span class="eyebrow">Built by a guitarist, not a growth team</span>
+          <h2>No accounts. No ads. No streaks.</h2>
+          <p>Just an instrument's worth of tools, built by a guitarist who wanted them to exist.</p>
+        </div>
+        <div class="trust-grid">
+          <div>
+            <div class="stat">Zero</div>
+            <p>network requests made by the app itself — every tool runs entirely on your device.</p>
+          </div>
+          <div>
+            <div class="stat">Zero</div>
+            <p>accounts, sign-ins, or usage tracking inside the app.</p>
+          </div>
+          <div>
+            <div class="stat">Free</div>
+            <p>to download. No subscription, no streaks or badges nagging you to keep a habit alive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-row">
+      <div>
+        <div class="brand" style="font-size:1rem;">
+          <img src="assets/icon-512.png" alt="" width="24" height="24">
+          Celestial Strings
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="copyright.html">Copyright</a>
+        <a href="mailto:sndpkrl007@gmail.com">Contact</a>
+      </nav>
+    </div>
+    <p class="legal">
+      Apple, the Apple logo, iPhone, iPad, Mac, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Celestial Strings is not affiliated with or endorsed by Apple Inc.
+    </p>
+    <p class="legal">© 2026 Sandeep Koirala. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="cookie-banner" hidden>
+  <p>This site uses optional analytics cookies to see what's helping people find the app. No cookies are set until you accept, and nothing is shared with the app itself.</p>
+  <div class="actions">
+    <button class="decline" type="button">Decline</button>
+    <button class="accept" type="button">Accept</button>
+  </div>
+</div>
+
+<script src="assets/main.js"></script>
 </body>
 </html>
