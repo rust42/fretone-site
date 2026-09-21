@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rust42.github.io/celestial-strings-site/sitemap.xml
+Sitemap: https://rust42.github.io/fretone-site/sitemap.xml

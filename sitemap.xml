@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rust42.github.io/celestial-strings-site/</loc>
+    <loc>https://rust42.github.io/fretone-site/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://rust42.github.io/celestial-strings-site/privacy.html</loc>
+    <loc>https://rust42.github.io/fretone-site/privacy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://rust42.github.io/celestial-strings-site/support.html</loc>
+    <loc>https://rust42.github.io/fretone-site/support.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://rust42.github.io/celestial-strings-site/copyright.html</loc>
+    <loc>https://rust42.github.io/fretone-site/copyright.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
